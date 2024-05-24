@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black overflow-x-hidden;
+}
+
+.moving-grid-background {
+  will-change: transform;
+  background-size: 3rem 3rem;
+  background-image: linear-gradient(90deg, #8882 1px, transparent 0),
+    linear-gradient(180deg, #8882 1px, transparent 0);
+
+  @apply animate-moving-background;
+}
+
+.animate-beam {
+  opacity: 0;
+  transform: translate(-30%, -62%) scale(0.5);
+}
